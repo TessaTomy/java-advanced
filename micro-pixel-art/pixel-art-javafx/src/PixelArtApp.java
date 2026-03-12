@@ -21,7 +21,7 @@ public class PixelArtApp extends Application {
 
         StackPane splashRoot = new StackPane(splashLabel);
         splashRoot.setStyle("-fx-background-color: #001a33;");
-        Scene splashScene = new Scene(splashRoot, 1100, 900);
+        Scene splashScene = new Scene(splashRoot, 1100, 950);
 
         stage.setScene(splashScene);
         stage.setTitle("Pixel Art Studio");
@@ -35,7 +35,7 @@ public class PixelArtApp extends Application {
         fadeIn.setOnFinished(e -> {
             try {
                 Parent root = FXMLLoader.load(getClass().getResource("/pixel.fxml"));
-                Scene scene = new Scene(root, 1100, 900);
+                Scene scene = new Scene(root, 1100, 950);
                 stage.setScene(scene);
             } catch (Exception ex) {
                 ex.printStackTrace();
